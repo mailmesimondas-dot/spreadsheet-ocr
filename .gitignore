@@ -10,6 +10,7 @@ dist/
 bin/
 __pycache__/
 *.spec
+!buildozer.spec
 buildozer.log
 temp_uploaded_spreadsheet.png
 test_annotated.png
