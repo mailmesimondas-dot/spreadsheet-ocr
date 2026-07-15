@@ -44,8 +44,6 @@ jobs:
 
       - name: Build Android APK with Buildozer
         run: |
-          buildozer android sdk
-          cp -r /usr/local/lib/android/sdk/licenses ~/.buildozer/android/platform/android-sdk/
           yes | buildozer android debug
 
       - name: Upload APK Artifact
