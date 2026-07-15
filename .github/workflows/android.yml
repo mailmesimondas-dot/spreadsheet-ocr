@@ -43,8 +43,10 @@ jobs:
             buildozer-${{ runner.os }}-
 
       - name: Build Android APK with Buildozer
+        env:
+          APP_ANDROID_SDK_PATH: /usr/local/lib/android/sdk
         run: |
-          yes | buildozer android debug
+          buildozer android debug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
